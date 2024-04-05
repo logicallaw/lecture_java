@@ -1,0 +1,11 @@
+abstract class Tmp2{
+	public Tmp2() {}
+	public default void say() {}
+	abstract public void print();
+	
+//	public void paint() { draw();}
+//	abstract public void draw();
+}
+public class Ex9 {
+
+}

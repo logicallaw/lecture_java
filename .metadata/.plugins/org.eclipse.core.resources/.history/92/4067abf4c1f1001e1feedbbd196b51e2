@@ -1,0 +1,14 @@
+class People {
+	
+}
+class Student extends People{
+	
+}
+public class Lab05_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

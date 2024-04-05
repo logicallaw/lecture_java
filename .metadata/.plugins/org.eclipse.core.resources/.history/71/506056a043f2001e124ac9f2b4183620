@@ -1,0 +1,7 @@
+abstract class Tmp3{
+	public abstract int add(int a, int b);
+	
+}
+public class Ex10 {
+
+}

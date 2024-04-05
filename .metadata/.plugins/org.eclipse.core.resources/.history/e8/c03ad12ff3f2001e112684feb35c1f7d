@@ -1,0 +1,81 @@
+import java.util.Scanner;
+abstract class Stack{
+	public abstract int length();
+	public abstract int capacity();
+	public abstract String pop();
+	public abstract boolean push(String str);
+}
+/* You mush override All abstract methods.
+ * public int length()
+ * public int capacity()
+ * public String pop()
+ * public boolean push(String str)
+ */
+class StringStack extends Stack{
+	//private fields.
+	private int length;
+	private int capacity;
+	private String[] stk;
+	//constructor
+	public StringStack(int size) {
+		stk = new String[size];
+		length = 0;
+		capacity = size;
+	}
+	@Override
+	public int length() {
+		return length;
+	}
+	@Override
+	public int capacity() {
+		return capacity;
+	}
+	@Override
+	public String pop() {
+		if (length > 0) {
+			return stk[length--];
+		}
+		else {
+			return null;
+		}
+	}
+	//
+	@Override //3, 1,2,3
+	public boolean push(String str) {
+		if (length < capacity) {
+			stk[length++] = str;
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+}
+public class Lab05_3 {
+	static Scanner scan = new Scanner(System.in);
+	public static void closeScanner() { scan.close(); }
+	public static void main(String[] args) {
+		System.out.print("size of stack: ");
+		int size = scan.nextInt();
+		StringStack stk1 = new StringStack(size);
+		
+		System.out.print("input: ");
+		String inputMessage = scan.nextLine();
+		while(!inputMessage.equals("exit")) {
+			if (stk1.push(inputMessage)) {
+				System.out.print("input: ");
+				inputMessage = scan.nextLine();
+			} else {
+				System.out.println("stack is full!");
+			}
+		}
+		
+		System.out.print("pop all strings: ");
+		for(int i = 0; i < stk1.length(); i++) {
+			System.out.print(stk1.pop() + " ");
+		}
+		
+		Lab05_3.closeScanner();
+	}
+
+}

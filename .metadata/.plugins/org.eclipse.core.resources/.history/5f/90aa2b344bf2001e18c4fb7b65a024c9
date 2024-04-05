@@ -1,0 +1,13 @@
+interface AIInterface{
+	void recognizeSpeech();
+	void systhesizeSpeech();
+}
+class AIPhone implements MobilePhoneinterface, AIInterface{
+	
+}
+public class Ex14 {
+	public static void main(String[] args) {
+
+	}
+
+}
