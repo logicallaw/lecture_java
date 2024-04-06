@@ -8,39 +8,47 @@ class Device_2{
 	public String getInfo() {
 		return name + " " + year; 
 	}
-	public String getName() { return name; }
-	public int getYear() { return year; }
 }
 class S22_2 extends Device_2{
+	//Overriding
+	@Override
+	public String getInfo() {
+		return super.getInfo() + " " + price;
+	}
+	//Field
 	private String price = "$1400";
+	//Constructor
 	public S22_2(String name, int year) {
 		super(name, year);
 	}
-	@Override
-	public String getInfo() {
-		return getName() + " " + getYear() + " " + price;
-	}
+	
 }
 class MP3_2 extends Device_2{
+	//Overriding
+	@Override
+	public String getInfo() {
+		return super.getInfo() + " " + price;
+	}
+	//Field
 	private String price = "$120";
+	//Constructor
 	public MP3_2(String name, int year) {
 		super(name, year);
 	}
-	@Override
-	public String getInfo() {
-		return getName() + " " + getYear() + " " + price;
-	}
-	
 }
 class TV_2 extends Device_2{
+	//Overriding
+	@Override
+	public String getInfo() {
+		return super.getInfo() + " " + price;
+	}
+	//Field
 	private String price = "$5000";
+	//Constructor
 	public TV_2(String name, int year) {
 		super(name, year);
 	}
-	@Override
-	public String getInfo() {
-		return getName() + " " + getYear() + " " + price;
-	}
+	
 }
 public class Lab05_2 {
 	public static void printInfo(Device_2 d) {
@@ -51,10 +59,7 @@ public class Lab05_2 {
 		MP3_2 mp3 = new MP3_2("MP3", 2005);
 		TV_2 tv = new TV_2("TV", 2017);
 		
-		Device_2[] device = new Device_2[3];
-		device[0] = s22; //upcasting
-		device[1] = mp3;
-		device[2] = tv;
+		Device_2[] device = new Device_2[] {s22, mp3, tv};
 		
 		for (Device_2 d : device) 
 			printInfo(d);

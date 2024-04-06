@@ -247,6 +247,10 @@ private-default-protected-public
 클래스간 상속은 extends
 추상클래스 구현은 implements
 
+6.타입식별하는 이유는
+업캐스팅된 레퍼런스로는 객체의 타입 판단이 어렵기 때문이다.
+그래서 instanceof 연산자를 통해 
+
 
 
 

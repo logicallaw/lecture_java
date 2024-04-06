@@ -9,6 +9,8 @@
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
 			<item value="read"/>
+			<item value="add"/>
+			<item value="getInfo"/>
 			<item value="USB.read"/>
 			<item value="printInfo"/>
 		</list>

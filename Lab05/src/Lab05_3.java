@@ -5,73 +5,68 @@ abstract class Stack{
 	public abstract String pop();
 	public abstract boolean push(String str);
 }
-/* You mush override All abstract methods.
- * public int length()
- * public int capacity()
- * public String pop()
- * public boolean push(String str)
- */
+
 class StringStack extends Stack{
-	//private fields.
-	private int tos;
-	private String[] stk;
-	//constructor
-	public StringStack(int size) {
-		stk = new String[size];
-		tos = 0;
-	}
 	@Override
 	public int length() {
 		return tos;
 	}
 	@Override
 	public int capacity() {
-		return stk.length;
+		return stack.length;
 	}
 	@Override
 	public String pop() {
 		if (tos >= 0) {
-			return stk[--tos];
+			return stack[--tos];
 		}
-		else {
-			return null;
-		}
+		return null;
 	}
-	//
-	@Override //3, 1,2,3
+	@Override
 	public boolean push(String str) {
-		if (tos < stk.length) {
-			stk[tos++] = str;
+		if (tos < stack.length) {
+			stack[tos++] = str;
 			return true;
 		}
 		else {
 			return false;
 		}
 	}
+	
+	//Field
+	private String[] stack;
+	private int tos;
+	//Constructor
+	public StringStack(int size) {
+		stack = new String[size];
+		tos = 0;
+	}
+	//Method
 }
 public class Lab05_3 {
 	static Scanner scan = new Scanner(System.in);
-	public static void closeScanner() { scan.close(); }
+	public static void closeScanner() {
+		scan.close();
+	}
 	public static void main(String[] args) {
 		System.out.print("size of stack: ");
 		int size = scan.nextInt();
-		StringStack stk1 = new StringStack(size);
+		StringStack stk = new StringStack(size);
 		
 		System.out.print("input: ");
 		String inputMessage = scan.next();
 		while(!inputMessage.equals("exit")) {
-			if (!stk1.push(inputMessage)) {
+			if (!stk.push(inputMessage)) {
 				System.out.println("stack is full!");
 			}
 			System.out.print("input: ");
 			inputMessage = scan.next();
 		}
-		System.out.print("pop all strings: ");
-		for(int i = 0; i < stk1.capacity(); i++) {
-			System.out.print(stk1.pop() + " ");
-		}
 		
+		System.out.print("pop all things: ");
+		for (int i = 0; i < stk.capacity(); i++) {
+			System.out.print(stk.pop() + " ");
+		}
 		Lab05_3.closeScanner();
 	}
-
 }
