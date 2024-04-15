@@ -108,6 +108,11 @@ System.out.println(s1);
 -문자열의 문자:String객체.charAt(index); 이때, index는 0부터 시작한다.
 인덱스를 벗어난 범위는 컴파일 에러가 발생한다.
 
--
+21.Calendar 클래스는 추상클래스이므로, new Calendar()로 객체를 생성하지 않는다.
+객체 생성은 Calendar.getInstance();로 받아온다.
+
+22.Calendar에서
+set()메서드는 year, month, day로 매개변수를 받는데
+이때, month는 0-11 범위임을 주의하자.
 
 */

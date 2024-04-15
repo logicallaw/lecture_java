@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="import java.lang.StringBuffer;"/>
 			<item value="read"/>
 			<item value="add"/>
 			<item value="getInfo"/>
@@ -18,7 +19,7 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="922"/>
+		<item key="DIALOG_X_ORIGIN" value="901"/>
 		<item key="DIALOG_Y_ORIGIN" value="85"/>
 		<item key="DIALOG_WIDTH" value="336"/>
 		<item key="DIALOG_HEIGHT" value="400"/>

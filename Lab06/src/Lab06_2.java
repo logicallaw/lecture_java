@@ -19,6 +19,10 @@ class Circle extends Point{
 	public String toString() {
 		return super.toString() + ", r = " + r;
 	}
+	@Override
+	public boolean equals(Object o) {
+		return toString().equals(.toString());
+	}
 }
 public class Lab06_2 {
 	public static void main(String[] args) {

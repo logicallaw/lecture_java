@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="device.Device"/>
     <fullyQualifiedTypeName name="device.S22"/>
     <fullyQualifiedTypeName name="device.MP3"/>
     <fullyQualifiedTypeName name="device.TV"/>
     <fullyQualifiedTypeName name="hub.USBhub"/>
     <fullyQualifiedTypeName name="usb.USB"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

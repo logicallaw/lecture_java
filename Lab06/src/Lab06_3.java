@@ -1,32 +1,34 @@
 import java.util.Objects;
 import java.lang.*;
-class Student extends Object{
+class Student{
+	/*
+	Overriding
+	-hashCode() of Object class.
+	-equals() of Object class.
+	*/
+	@Override 
+	public int hashCode() {
+		return Objects.hash(number, name); //field1:number, field2:name
+	}
+	@Override
+	public boolean equals(Object obj) { 
+		if (obj instanceof Student) {
+			return number == ((Student)obj).number || name.equals(((Student)obj).name);
+		}
+		return false;
+	}
+	//Field
 	private int number;
 	private String name;
+	//Constructor
 	public Student(int number, String name) {
 		this.number = number;
 		this.name = name;
 	}
-	public int getNumber() { return number; }
-	public String getName() { return name; }
-	@Override
-	public int hashCode() { //overriding-Object class
-		int hashCode = Objects.hash(number, name); //field1:number, field2:name
-		return hashCode;
-	}
-	@Override
-	public boolean equals(Object obj) {
-		//If obj is Student class...
-		if (obj instanceof Student) {
-			if (number == ((Student)obj).getNumber() || name.equals(((Student)obj).getName()))
-				return true;
-			else
-				return false;
-		}
-		else {
-			return false;
-		}
-	}
+	//Getter:You can get the private field values
+//	public int getNumber() { return number; }
+//	public String getName() { return name; }
+	
 }
 public class Lab06_3 {
 	public static void main(String[] args) {
