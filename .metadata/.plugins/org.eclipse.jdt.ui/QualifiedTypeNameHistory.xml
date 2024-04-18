@@ -7,5 +7,7 @@
     <fullyQualifiedTypeName name="hub.USBhub"/>
     <fullyQualifiedTypeName name="usb.USB"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Byte"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.Objects"/>
 </qualifiedTypeNameHistroy>
