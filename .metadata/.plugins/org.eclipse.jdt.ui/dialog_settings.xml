@@ -13,15 +13,15 @@
 	</section>
 	<section name="JavaProjectWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="472"/>
-		<item key="DIALOG_Y_ORIGIN" value="47"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
 		<item key="DIALOG_WIDTH" value="790"/>
-		<item key="DIALOG_HEIGHT" value="700"/>
+		<item key="DIALOG_HEIGHT" value="692"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="347"/>
+		<item key="DIALOG_X_ORIGIN" value="296"/>
 		<item key="DIALOG_Y_ORIGIN" value="0"/>
 		<item key="DIALOG_WIDTH" value="586"/>
 		<item key="DIALOG_HEIGHT" value="650"/>
@@ -90,7 +90,7 @@
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 	<section name="NewPackageCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="325"/>
+		<item key="DIALOG_X_ORIGIN" value="296"/>
 		<item key="DIALOG_Y_ORIGIN" value="70"/>
 		<item key="DIALOG_WIDTH" value="586"/>
 		<item key="DIALOG_HEIGHT" value="500"/>
@@ -100,7 +100,7 @@
 		<item key="create_package_info_java" value="false"/>
 	</section>
 	<section name="NewInterfaceCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="325"/>
+		<item key="DIALOG_X_ORIGIN" value="296"/>
 		<item key="DIALOG_Y_ORIGIN" value="4"/>
 		<item key="DIALOG_WIDTH" value="586"/>
 		<item key="DIALOG_HEIGHT" value="520"/>

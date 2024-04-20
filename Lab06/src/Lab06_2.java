@@ -21,7 +21,7 @@ class Circle extends Point{
 	}
 	@Override
 	public boolean equals(Object o) {
-		return toString().equals(.toString());
+		return toString().equals(toString());
 	}
 }
 public class Lab06_2 {

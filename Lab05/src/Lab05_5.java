@@ -106,18 +106,18 @@ class USBhub {
 		counter = 0;
 	}
 	//Method
-	public void addDevice(USB d) {
+	public void addDevice(USB u) {
 		if(counter < hub.length) {
-			hub[counter++] = d;
-			if (d instanceof USBA) {
-				((USBA)d).connectA();
+			hub[counter++] = u;
+			if (u instanceof USBA) {
+				((USBA)u).connectA();
 			}
-			else if (d instanceof USBC) {
-				((USBC)d).connectC();
+			else if (u instanceof USBC) {
+				((USBC)u).connectC();
 			}
 		}
 		else {
-			System.out.println("fail to add usb.");
+			System.out.println("hub is full!");
 		}
 	}
 	public void readUSBs() {
