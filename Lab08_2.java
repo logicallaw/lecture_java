@@ -6,7 +6,7 @@ public class Lab08_2 {
 		OutputStreamWriter iout = null;
 		FileOutputStream fin = null;
 		try {
-			fin = new FileOutputStream("c:\\test\test3.txt");
+			fin = new FileOutputStream("c:\\test\\test3.txt");
 			iout = new OutputStreamWriter(fin, "UTF-8");
 			while(true) {
 				String line = scan.nextLine();
@@ -25,7 +25,7 @@ public class Lab08_2 {
 		InputStreamReader ist = null;
 		FileInputStream fst = null;
 		try {
-			fst = new FileInputStream("c:\\test\test3.txt");
+			fst = new FileInputStream("c:\\test\\test3.txt");
 			ist = new InputStreamReader(fst, "UTF-8");
 			int c;
 			while((c = ist.read()) != -1) {

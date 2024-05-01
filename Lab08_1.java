@@ -1,7 +1,5 @@
-import java.io.FileWriter;
-import java.io.FileReader;
-import java.util.Scanner;
-import java.io.IOException;
+import java.util.*;
+import java.io.*;
 public class Lab08_1 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
