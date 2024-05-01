@@ -33,3 +33,5 @@ public class Lab06_4 {
 		System.out.println((System.currentTimeMillis() - t) + "ms");
 	}
 }
+//
+
