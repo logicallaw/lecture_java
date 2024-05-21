@@ -33,11 +33,11 @@ public class Lab12_2 extends JFrame{
                 js.setValue(taIndex);
             }
             else if (jsIndex <= taIndex){
-                for(int i = 0; i < jsIndex; i++){
-                    temp = temp.concat(taText[i]);
-                }
+            //     for(int i = 0; i < jsIndex; i++){
+            //         temp = temp.concat(taText[i]);
+            //     }
+                taText.setText(taText.getText(0, jsIndex - 1));
             }
-            taText.setText(temp);
         }
     }
     public static void main(String[] args){
