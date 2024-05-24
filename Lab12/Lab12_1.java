@@ -13,7 +13,7 @@ public class Lab12_1 extends JFrame{
         new JLabel("10원"),
         new JLabel("1원")
     };
-    private int[] nums = new nums[]{
+    private int[] nums = new int[]{
         10000, 1000, 500, 100, 50, 10
     };
     private JTextField[] latf = new JTextField[la.length];
@@ -29,19 +29,19 @@ public class Lab12_1 extends JFrame{
         tf.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
-                int total = Integer.toString(tf.getText());
+                int total = Integer.parseInt(tf.getText());
                 int temp;
                 for (int i = 0; i < checkBoxs.length; i++){
                     if(checkBoxs[i].getStateChange() == ItemEvent.SELECTED){
                         if(total / nums[i] != 0){
                             temp = (total / nums[i]);
-                            latf[i].setText(static_cast<String>(temp));
+                            latf[i].setText(Integer.toString(temp));
                             total %= nums[i];
                         }
                     }
                 }
                 if(total != 0){
-                    latf[latf.length - 1].setText(static_cast<String>(total));
+                    latf[latf.length - 1].setText(Integer.toString(total));
                 }
             }
         });
